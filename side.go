@@ -1,4 +1,4 @@
-package geom
+package side
 
 const (
     Left = -1 + iota
