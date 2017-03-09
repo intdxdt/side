@@ -17,44 +17,44 @@ func NewSide() *Side {
 }
 
 //is left
-func (self *Side) IsLeft() bool {
-    return self.s == Left
+func (side *Side) IsLeft() bool {
+    return side.s == Left
 }
 //as left
-func (self *Side) AsLeft() *Side {
-    self.s = Left
-    return  self
+func (side *Side) AsLeft() *Side {
+    side.s = Left
+    return side
 }
 
 //Is on
-func (self *Side) IsOn() bool {
-    return self.s == On
+func (side *Side) IsOn() bool {
+    return side.s == On
 }
 
 //As on
-func (self *Side) AsOn() *Side {
-    self.s = On
-    return self
+func (side *Side) AsOn() *Side {
+    side.s = On
+    return side
 }
 
 //Is right
-func (self *Side) IsRight() bool {
-    return self.s == Right
+func (side *Side) IsRight() bool {
+    return side.s == Right
 }
 
 //As right
-func (self *Side) AsRight() *Side {
-    self.s = Right
-    return self
+func (side *Side) AsRight() *Side {
+    side.s = Right
+    return side
 }
 
 //is on or left
-func (self *Side) IsOnOrLeft() bool {
-    return self.IsOn() || self.IsLeft()
+func (side *Side) IsOnOrLeft() bool {
+    return side.IsOn() || side.IsLeft()
 }
 
 //is on or right
-func (self *Side) IsOnOrRight() bool {
-    return self.IsOn() || self.IsRight()
+func (side *Side) IsOnOrRight() bool {
+    return side.IsOn() || side.IsRight()
 }
 

@@ -2,11 +2,11 @@ package side
 
 import (
     "testing"
-    . "github.com/franela/goblin"
+    "github.com/franela/goblin"
 )
 
 func TestSideOf(t *testing.T) {
-    g := Goblin(t)
+    g := goblin.Goblin(t)
     g.Describe("Side", func() {
         g.It("sidedness", func() {
              var s = NewSide()
