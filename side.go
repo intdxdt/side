@@ -16,10 +16,16 @@ func NewSide() *Side {
     return &Side{On}
 }
 
+//get value
+func (self *Side) Value() int {
+    return self.s
+}
+
 //is left
 func (side *Side) IsLeft() bool {
     return side.s == Left
 }
+
 //as left
 func (side *Side) AsLeft() *Side {
     side.s = Left
