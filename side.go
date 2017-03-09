@@ -17,8 +17,8 @@ func NewSide() *Side {
 }
 
 //get value
-func (self *Side) Value() int {
-    return self.s
+func (side *Side) Value() int {
+    return side.s
 }
 
 //is left
