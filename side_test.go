@@ -26,6 +26,13 @@ func TestSideOf(t *testing.T) {
 			g.Assert(s.Value()).Equal(1)
 			g.Assert(s.AsRight().IsOnOrRight()).IsTrue()
 			g.Assert(s.IsOn()).IsFalse()
+			s.AsLeft()
+			var o = NewSide().AsLeft()
+			g.Assert(s.IsSameSide(o)).IsTrue()
+			o.AsOn()
+			g.Assert(s.IsSameSide(o)).IsFalse()
+			s.AsOn()
+			g.Assert(s.IsSameSide(o)).IsTrue()
 		})
 	})
 
